@@ -14,6 +14,7 @@ Postgresql:
 
 ## To render out YAML manifest:
 Run command: `helm template <name-app> ./k8s-deployment/app-demo > ./verify.yaml`
+
 Note: Declare a namespace when deploying the chart.
 
 ## LivenessProbe, readinessProbe, and startupProbe
