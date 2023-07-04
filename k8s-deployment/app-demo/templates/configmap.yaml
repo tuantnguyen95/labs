@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.metadata.name }}-config
+  labels:
+    {{- with .Values.labels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+data:
+  redis-host: {{ .Values.redis.host }}
+  redis-port: "{{ .Values.redis.port }}"
+  postgres-host: {{ .Values.postgres.host }}
+  postgres-port: "{{ .Values.postgres.port }}"
+  postgres-user: {{ .Values.postgres.user }}
+  postgres-password: {{ .Values.postgres.password }}
+  postgres-database: {{ .Values.postgres.database }}
