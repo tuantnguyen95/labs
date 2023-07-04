@@ -75,6 +75,7 @@ affinity: {}
 redis:
   host: redis.database.svc.cluster.local
   port: "6379"
+  
 postgres:
   host: postgres.database.svc.cluster.local
   port: "5432"
