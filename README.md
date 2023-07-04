@@ -2,11 +2,12 @@
 ![Stars](https://img.shields.io/badge/stars-13-yellow)
 ## Build app demo
 
-cd source
-docker build -t demo-app:1.0.0 .
+`cd source
+docker build -t demo-app:1.0.0 .`
 
 ## Deploy Postgresql & Redis with manifest:
-kubectl apply -f k8s-deployment/database
+`kubectl apply -f k8s-deployment/database`
+
 Postgresql:
 - user/pass: demo-use/postgres_pass 
 - database name: demo-database
